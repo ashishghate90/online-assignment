@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <%= link_to "All Tweets", root_url %> |
+      <%= link_to "All Followers Tweets", followers_tweets_tweets_url %> |
+      <%= link_to "Profile", profile_url(current_user.id) %> | 
+      <%= link_to "Edit", edit_user_registration_url %> | 
+      <%= link_to "Sign-out", destroy_user_session_url, method: :delete %><br/>
+      <%= "logged-in as: #{current_user.name}" %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

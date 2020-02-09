@@ -1,0 +1,10 @@
+<h2><%= @user.name %></h2>
+<p><b>followers: </b><%= @user.followers.count %></p>
+<% @user.followers.each do |follower| %>
+	<p><%= follower.name %></p>
+<% end %>
+<br/><br/>
+<p><b>Following: </b><%= @user.followed.count %></p>
+<% @user.followed.each do |follow| %>
+	<p><%= follow.name %></p>
+<% end %>

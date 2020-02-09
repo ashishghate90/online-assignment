@@ -1,25 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Small Tweeter based application where we have the following feature.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# online-assignment
+- User can login and sign-up.
+- Only logged-in users can access the features of application.
+- User can Tweet.
+- User can see all most recent Tweets of Follower users by clicking on "All Followers Tweets".
+- User can see all tweets of all User by clicking on "All Tweets".
+- User can update his/her profile.
+- User can follow/unfollow to other user.
+- User can see other users followers and followings.
